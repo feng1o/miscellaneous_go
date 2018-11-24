@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{{with  .user}}
+        {{.Name}}
+                {{end}}
+<hr><br>
+<h1 style="color:red">jox add </h1><br>
+<hr>
+<p style="font-size:22px"> ksangdg </p>
+
+<hr>
+<h2>1.判定</h2>
+<br>
+{{if .trueCond}} true {{end}}
+{{if .falseCond}} x {{else}} false {{end}}
+<hr><br>
+
+<h2>2.结构体变量，循环获取</h2><br>
+
+{{.user.Name}}; {{.user.Age}}; {{.user.Sex}} <br>
+<hr><br>
+{{with .user}}
+{{.Name}};{{.Age}};{{.Sex}}; with使用with，避免输入重复
+{{end}}
+
+<hr>
+<h2>3.循环</h2>
+{{.arr}}<br>
+{{range .arr}}
+    {{.}}
+    {{end}}
+<br>
+
+<hr>
+<h2>4.模板变量$xx</h2>
+{{$tplvar := .tplvar}}
+{{$tplvar}}
+<br>
+
+<hr>
+<h2>5.html语句转化 </h2>
+{{.html}}
+<br>
+{{str2html .html}}, str2html,转化为html
+<br>
+
+<hr>
+<h2>6.html通过str2html前样子，编码 </h2>
+{{.pipe}}
+{{.pipe | htmlquote}} 编码为这样了
+<br>
+
+<hr>
+<h2>7.模板嵌套 </h2>
+<br>
+{{template "test"}}
+<br>
+
+<hr>
+</body>
+</html>

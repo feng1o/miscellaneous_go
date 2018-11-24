@@ -1,0 +1,39 @@
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="/static/img/favicog.png">
+    <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css">  引用theader。tpl的-->
+{{template  "header"}}
+    <title>首页</title>
+</head>
+<body>
+<!--移动到t.navgator.tpl -->
+    <div lass="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            {{template  "navbar"  .}}
+            <!-- <a class="navbar-brand" href="/">my博客</a>
+            <ul class="nav navbar-nav">
+                <li class="active"> <a href="">首页</a></li>
+                <li class="active"> <a href="">分类</a></li>
+                <li class="active"> <a href="">文章</a></li>
+            </ul> -->
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="page.header">
+            <h1>我的第一篇博客</h1>
+            <h6 class="text-muted">文章发表于2015年6月2日 xx::xx, 共有100次浏览，200个评论</h6>
+            <p>
+                大家好这是我的第一篇博客~！
+            </p> <hr>
+        </div>
+    </div>
+    <!-- 七牛与的jQuery -->
+    <script type="text/javascript" src="http://cdn.staticfile.org/jquery/3.2.1/core.js"></script>
+    <script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
+</body>
+
+</html>
