@@ -32,9 +32,8 @@ func main() {
 	var x interface{}
 	err := json.Unmarshal([]byte(jstr), &x)
 	fmt.Println(x)
-	fmt.Println(reflect.TypeOf(x.A))
-
-	return
+	x2 := x
+	fmt.Println(reflect.TypeOf(x2))
 
 	st := &Student{
 		"Xiao Ming",
