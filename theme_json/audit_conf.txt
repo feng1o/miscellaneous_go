@@ -1,0 +1,16 @@
+{
+   "instance" : [
+      {
+         "cdb_kafka_endpoint" : "",
+         "cdb_kafka_name" : "",
+         "cdb_kafka_partition" : 0,
+         "customer_kafka_names" : "",
+         "customer_kafka_partitions" : "",
+         "customer_kafka_topics" : "",
+         "entrance" : "es_host",
+         "es_host" : "100.104.230.16:9200",
+         "instance_id" : "b33aaef5-d2b3-11e9-85e8-246e968a90d8",
+         "log_path" : "/data/mysql_root/log/20143/audit_log/"
+      }
+   ]
+}
